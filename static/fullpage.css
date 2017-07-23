@@ -1,0 +1,61 @@
+/* SLIDENAV STYLES - fullPage.js
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+	background: white;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+	width: 16px;
+	height: 16px;
+	margin: -8px 0 0 -8px;
+	background: transparent;
+	box-sizing: border-box;
+	border: 1px solid #24221F;
+}
+
+/* MQ STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 767px) {
+	nav ul {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	nav li {
+		margin-top: 1px;
+	}
+
+  nav li a {
+    font-size: 1.5em;
+  }
+
+  .scroll-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+
+  .open-menu ~ nav {
+		padding: 20px 0;
+	}
+
+	nav li a {
+		padding: 3px;
+	}
+}

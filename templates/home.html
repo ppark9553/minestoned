@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="마인드와 키스톤 투자 플랫폼">
+    <meta name="author" content="team minestoned">
+    {% load staticfiles %}
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'logo.png' %}">
+    <title>마인드</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <link rel="stylesheet" href="{% static 'balloon.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'jquery.fullPage.css' %}">
+    <link rel="stylesheet" href="{% static 'fullpage.css' %}">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+    <div id="fullpage">
+        <!-- first page -->
+        <div class="section">
+            <div id="h">
+                <div class="logo" data-balloon="고객이 우선입니다" data-balloon-pos="down">YOU, MINED. & KEYSTONE</div>
+                <div class="social hidden-xs">
+                    <a href="#" data-balloon="마인드 (Mined)" data-balloon-pos="down"><i class="fa fa-krw fa-flip-vertical" aria-hidden="true"></i></a>
+                    <a href="#" data-balloon="키스톤 (Keystone)" data-balloon-pos="down"><i class="fa fa-key" aria-hidden="true"></i></a>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 centered">
+                            <h1>내 포트폴리오는 어떻게 짜야할까, <br/>세이퍼?</h1>
+                            <div class="mtb">
+                                <form role="form" action="#" method="post" enctype="plain">
+                                    <input type="email" name="email" class="subscribe-input" placeholder="관심 종목의 코드를 입력하세요..." required>
+                                    <button class='btn btn-conf btn-green' type="submit">선택 종목 진단받기</button>
+                                </form>
+                            </div><!--/mt-->
+                        </div>
+                    </div><!--/row-->
+                </div><!--/container-->
+            </div><!-- /H -->
+
+            <div id="b">
+                <div class="container">
+                    <div class="row material">
+                        <div class="pic-container">
+                            <div class="parent">
+                                <div class="wrapper thumb-1">
+                                    <div class="content">
+                                        <div class="img"></div>
+                                        <div class="text">
+                                            <div class="line title"><strong>수익성</strong></div>
+                                            <div class="line subtitle">수익성(모멘텀)이 좋은 종목 위주로 찾아봐요</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pic-container">
+                            <div class="parent">
+                                <div class="wrapper thumb-2">
+                                    <div class="content">
+                                        <div class="img"></div>
+                                        <div class="text">
+                                            <div class="line title"><strong>안정성</strong></div>
+                                            <div class="line subtitle">손실(변동성)이 적은 종목을 찾는 게 좋아요</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pic-container">
+                            <div class="parent">
+                                <div class="wrapper thumb-3">
+                                    <div class="content">
+                                        <div class="img"></div>
+                                        <div class="text">
+                                            <div class="line title"><strong>가능성</strong></div>
+                                            <div class="line subtitle">투자자들의 매수, 매도를 읽고 수급을 파악하세요</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- second page -->
+        <div class="section">
+            <ul class="bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="container logo_chart">
+                <div class="row justify-content-center">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-5 dreamyWords">
+                        <h1>you,</h1>
+                        <h1>mined. & keystone</h1>
+                    </div>
+                    <div class="col-md-4 momentum">
+                        <img src="{% static 'momentum.png' %}" class="chart img-fluid" alt="momentum">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-5 dreamyWords">
+                        <p id="quote"><strong>"Active trading by passive analysis."</strong></p>
+                        <p>키스톤과 마인드는 철저한 투자원칙과 프로세스로 이기는 투자를 합니다.</p>
+                        <p>마인드의 자동화된 퀀트 기법과 키스톤의 액티브 투자 방식은 여러분을 돕기 위해 존재합니다.</p>
+                    </div>
+
+                    <div class="col-md-4 company">
+                        <a class="ghost-button-thick-border" href="#" data-balloon="마인드에 대해 더 알고 싶어요~" data-balloon-pos="down">마인드 웹사이트</a>
+                        <a class="ghost-button-thick-border" href="#" data-balloon="키스톤에 대해 더 알고 싶어요~" data-balloon-pos="down">키스톤 웹사이트</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="fabs"  >
+        <a href="#" class="fab" data-balloon="바로 시작하기!" data-balloon-pos="left"></a>
+        <a href="#" class="fab" data-balloon="회사 구경하기" data-balloon-pos="left"></a>
+        <a href="#" class="fab" data-balloon="상품 소개받기" data-balloon-pos="left"></a>
+        <a class="fab" href="#"></a>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{% static 'jquery.fullPage.min.js' %}"></script>
+    <script src="{% static 'fullpage.js' %}"></script>
+    <script>
+    $(function() {
+      $('.wrapper').click(function() {
+          $('.wrapper').each(function() {
+             $(this).css('z-index', 0);
+          });
+            $(this).css('z-index', 10);
+            $(this).toggleClass('open');
+      })
+    });
+    </script>
+</body>
+</html>

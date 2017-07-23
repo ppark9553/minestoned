@@ -1,0 +1,276 @@
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+@import url('https://fonts.googleapis.com/css?family=Bree%20Serif');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+p {
+    color: #485261;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+
+.logo_chart {
+    padding-bottom: 5vh;
+}
+
+.dreamyWords h1 {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 5vw;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.momentum {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.chart {
+    width: 95%;
+    height: auto;
+}
+
+#quote {
+    font-family: 'Bree Serif', sans-serif;
+    font-size: 20px;
+    padding-bottom: 3.5vh;
+}
+
+.company {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.company a {
+    text-decoration: none;
+
+}
+
+.ghost-button-thick-border {
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  padding: 8px;
+  margin: 1vw;
+  color: #fff;
+  border: 3px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button-thick-border:hover,
+.ghost-button-thick-border:active {
+  background-color: #fff;
+  color: #135c9f;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    z-index: 0;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.bubbles li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+    bottom: -100px;
+    -webkit-animation: square 20s infinite;
+    animation: square 20s infinite;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+.bubbles li:nth-child(1) {
+    width: 25px;
+    height: 25px;
+    left: 10%;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+.bubbles li:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    left: 22%;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+.bubbles li:nth-child(3) {
+    width: 40px;
+    height: 40px;
+    left: 80%;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+}
+
+.bubbles li:nth-child(4) {
+    width: 60px;
+    height: 60px;
+    left: 60%;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+.bubbles li:nth-child(5) {
+    width: 47px;
+    height: 47px;
+    left: 50%;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+}
+
+.bubbles li:nth-child(6) {
+    width: 35px;
+    height: 35px;
+    left: 40%;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+}
+.bubbles li:nth-child(7) {
+    width: 30px;
+    height: 30px;
+    left: 34%;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+}
+
+.bubbles li:nth-child(8) {
+    width: 43px;
+    height: 43px;
+    left: 67%;
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+.bubbles li:nth-child(9) {
+    width: 40px;
+    height: 40px;
+    left: 76%;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+}
+
+.bubbles li:nth-child(10) {
+    width: 28px;
+    height: 28px;
+    left: 80%;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+.bubbles li:nth-child(11) {
+    width: 44px;
+    height: 44px;
+    left: 14%;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+}
+
+.bubbles li:nth-child(12) {
+    width: 60px;
+    height: 60px;
+    left: 25%;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    -webkit-animation-duration: 3.5s;
+    animation-duration: 3.5s;
+}
+
+.bubbles li:nth-child(13) {
+    width: 35px;
+    height: 35px;
+    left: 5%;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+}
+
+.bubbles li:nth-child(14) {
+    width: 56px;
+    height: 56px;
+    left: 77%;
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+}
+
+.bubbles li:nth-child(15) {
+    width: 48px;
+    height: 48px;
+    left: 93%;
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+@-webkit-keyframes square {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-1080px) rotate(630deg);
+        transform: translateY(-1080px) rotate(630deg);
+    }
+}
+
+@keyframes square {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-1080px) rotate(630deg);
+        transform: translateY(-1080px) rotate(630deg);
+    }
+}
