@@ -6,10 +6,10 @@ from django.contrib.auth.models import User
 
 
 class KeystoneData(models.Model):
-    owner = models.ForeignKey('auth.User',
-                              related_name='keystonedata')
     field = models.CharField(max_length=100, blank=False, unique=True)
     data = models.TextField()
+    owner = models.ForeignKey('auth.User',
+                              related_name='keystonedata')
     time_updated = models.DateTimeField(auto_now=True)
 
     def __str__(self):

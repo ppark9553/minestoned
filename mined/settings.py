@@ -27,6 +27,15 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['www.minestoned.com', 'minestoned.com', '104.131.9.68', '127.0.0.1', '127.0.1.1']
 
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    )
+}
 
 # Application definition
 
@@ -80,10 +89,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mined',
-	'USER': 'minestoned',
-	'PASSWORD': '1moneyisnoweverythingDAWG!',
-	'HOST': '104.131.9.68',
-	'PORT': '3306',
+	    'USER': 'minestoned',
+	    'PASSWORD': '1moneyisnoweverythingDAWG!',
+	    'HOST': '104.131.9.68',
+	    'PORT': '3306',
     }
 }
 
@@ -129,13 +138,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 STATICFILES_DIRS = [
    os.path.join(STATIC_ROOT, 'safer')
 ]
-
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    ),
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.BasicAuthentication',
-        'rest_framework.authentication.TokenAuthentication',
-    )
-}
