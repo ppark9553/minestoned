@@ -10,7 +10,7 @@ from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = {
 
-    url(r'^auth/', include('rest_framework.urls',namespace='rest_framework')),
+    url(r'^auth/', include('rest_framework.urls', namespace='rest_framework')),
 
     url(r'^token/', obtain_auth_token),
 
