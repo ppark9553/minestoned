@@ -31,4 +31,4 @@ class UserView(generics.ListAPIView):
 class UserDetailsView(generics.RetrieveAPIView):
     """View to retrieve a user instance."""
     queryset = User.objects.all()
-serializer_class = UserSerializer
+    serializer_class = UserSerializer
