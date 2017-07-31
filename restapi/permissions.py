@@ -1,12 +1,9 @@
-from rest_framework.permissions import BasePermission
-from .models import KeystoneData
+from rest_framework import permissions
 
-
-class IsOwner(BasePermission):
-    """Custom permission class to allow only keystonedata owners to edit them."""
+class IsOwnerOrReadOnly(permissions.BasePermission):
 
     def has_object_permission(self, request, view, obj):
-        """Return True if permission is granted to the keystonedata owner."""
-        if isinstance(obj, KeystoneData):
-            return obj.owner == request.user
+        if request.method in permissions.SAFE_METHODS:
+            return True
+
         return obj.owner == request.user

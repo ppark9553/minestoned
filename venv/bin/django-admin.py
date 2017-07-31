@@ -1,4 +1,4 @@
-#!/var/www/mined/venv/bin/python3
+#!/home/peepee/바탕화면/django/minestoned.com/venv/bin/python3
 from django.core import management
 
 if __name__ == "__main__":

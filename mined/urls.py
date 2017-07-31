@@ -18,8 +18,9 @@ from django.contrib import admin
 from django.views.generic.base import TemplateView
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
     url(r'^$', TemplateView.as_view(template_name='home.html'), name='home'),
+    url(r'^admin/', admin.site.urls),
     url(r'^api/', include('restapi.urls')),
-    url(r'^safer/', include('safer.urls'))
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^safer/', include('safer.urls')),
 ]

@@ -3,25 +3,23 @@ from .models import KeystoneData
 from django.contrib.auth.models import User
 
 
-class KeystoneDataSerializer(serializers.ModelSerializer):
+class KeystoneDataSerializer(serializers.HyperlinkedModelSerializer):
     """Serializer to map the Model instance into JSON format."""
 
     owner = serializers.ReadOnlyField(source='owner.username')
 
     class Meta:
-        """Meta class to map serializer's fields with the model fields."""
         model = KeystoneData
-        fields = ('field', 'data', 'owner', 'time_updated')
-        read_only_fields = ('time_updated')
+        fields = ('id', 'url', 'field_name', 'field_data', 'owner', 'updated')
 
 
-class UserSerializer(serializers.ModelSerializer):
+class UserSerializer(serializers.HyperlinkedModelSerializer):
     """A user serializer to aid in authentication and authorization."""
 
-    keystonedata = serializers.PrimaryKeyRelatedField(
-        many=True, queryset=KeystoneData.objects.all())
+    keystonedata = serializers.HyperlinkedRelatedField(
+        many=True, view_name='keyst-detail', read_only=True)
 
     class Meta:
         """Map this serializer to the default django user model."""
         model = User
-        fields = ('id', 'username', 'keystonedata')
+        fields = ('id', 'url', 'username', 'keystonedata')
